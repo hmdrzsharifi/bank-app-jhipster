@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.tetra.bank",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "bank",
+    "packageName": "com.tetra.bank",
+    "packageFolder": "com/tetra/bank",
+    "serverPort": "8080",
+    "authenticationType": "session",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "rememberMeKey": "f3f9a9e9eb8877e552674fa02cc58f9d66f581623669d74597ee55ce0d4eef821903ccf31f14622bca77c55e8f4eb2c5a98b",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1611329008817,
+    "testFrameworks": ["cucumber"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "fa"],
+    "blueprints": []
+  }
+}
