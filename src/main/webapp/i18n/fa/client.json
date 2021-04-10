@@ -1,0 +1,41 @@
+{
+  "bankApp": {
+    "client": {
+      "home": {
+        "title": "Clients",
+        "createLabel": "Create a new Client",
+        "createOrEditLabel": "Create or edit a Client",
+        "notFound": "No Clients found"
+      },
+      "created": "A new Client is created with identifier {{ param }}",
+      "updated": "A Client is updated with identifier {{ param }}",
+      "deleted": "A Client is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Client {{ id }}?"
+      },
+      "detail": {
+        "title": "Client"
+      },
+      "accountNumber": "Account Number",
+      "status": "Status",
+      "activationDate": "Activation Date",
+      "firstname": "Firstname",
+      "lastname": "Lastname",
+      "middlename": "Middlename",
+      "fullname": "Fullname",
+      "displayName": "Display Name",
+      "mobileNo": "Mobile No",
+      "emailAddress": "Email Address",
+      "isStaff": "Is Staff",
+      "externalId": "External Id",
+      "dateOfBirth": "Date Of Birth",
+      "closureDate": "Closure Date",
+      "rejectionDate": "Rejection Date",
+      "reactivateDate": "Reactivate Date",
+      "submittedOnDate": "Submitted On Date",
+      "image": "Image",
+      "staff": "Staff",
+      "office": "Office"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "name": "SavingsProduct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "shortName",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "500"
+    },
+    {
+      "fieldName": "nominalAnnualInterestRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "interestCompoundingPeriodType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "interestPostingPeriodType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "interestCalculationType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "interestCalculationDaysInYearType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "minRequiredOpeningBalance",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "lockinPeriodFrequency",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "lockinPeriodFrequencyType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "accountingRule",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "withdrawalFeeApplicableForTransfer",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "allowOverdraft",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "overdraftLimit",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "nominalAnnualInterestRateOverdraft",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "minOverdraftForInterestCalculation",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "enforceMinRequiredBalance",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "minRequiredBalance",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "minBalanceForInterestCalculation",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "withHoldTax",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isDormancyTrackingActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "daysToInactive",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "daysToDormancy",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "daysToEscheat",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210326103700",
+  "javadoc": "The SavingsProduct entity.\\n@author HamidReza.",
+  "entityTableName": "m_savings_product",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

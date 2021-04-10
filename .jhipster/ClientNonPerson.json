@@ -1,0 +1,23 @@
+{
+  "name": "ClientNonPerson",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String",
+      "javadoc": "fieldName"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210326103500",
+  "javadoc": "The ClientNonPerson entity.\\nm_client_non_person\\n@author A true hipster",
+  "entityTableName": "client_non_person",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

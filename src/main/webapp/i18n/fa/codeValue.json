@@ -1,0 +1,25 @@
+{
+  "bankApp": {
+    "codeValue": {
+      "home": {
+        "title": "Code Values",
+        "createLabel": "Create a new Code Value",
+        "createOrEditLabel": "Create or edit a Code Value",
+        "notFound": "No Code Values found"
+      },
+      "created": "A new Code Value is created with identifier {{ param }}",
+      "updated": "A Code Value is updated with identifier {{ param }}",
+      "deleted": "A Code Value is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Code Value {{ id }}?"
+      },
+      "detail": {
+        "title": "Code Value"
+      },
+      "fieldName": "Field Name",
+      "help": {
+        "fieldName": "fieldName"
+      }
+    }
+  }
+}

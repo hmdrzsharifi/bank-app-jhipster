@@ -1,0 +1,23 @@
+{
+  "name": "AppUser",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String",
+      "javadoc": "fieldName"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210326103400",
+  "javadoc": "The AppUser entity.\\n@author A true hipster",
+  "entityTableName": "app_user",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

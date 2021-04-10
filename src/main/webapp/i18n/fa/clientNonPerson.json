@@ -1,0 +1,25 @@
+{
+  "bankApp": {
+    "clientNonPerson": {
+      "home": {
+        "title": "Client Non People",
+        "createLabel": "Create a new Client Non Person",
+        "createOrEditLabel": "Create or edit a Client Non Person",
+        "notFound": "No Client Non People found"
+      },
+      "created": "A new Client Non Person is created with identifier {{ param }}",
+      "updated": "A Client Non Person is updated with identifier {{ param }}",
+      "deleted": "A Client Non Person is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Client Non Person {{ id }}?"
+      },
+      "detail": {
+        "title": "Client Non Person"
+      },
+      "fieldName": "Field Name",
+      "help": {
+        "fieldName": "fieldName"
+      }
+    }
+  }
+}

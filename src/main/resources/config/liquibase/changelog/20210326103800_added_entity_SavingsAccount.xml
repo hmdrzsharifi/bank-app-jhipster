@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    
+    <!--
+        Added the entity SavingsAccount.
+    -->
+    <changeSet id="20210326103800-1" author="jhipster">
+        <createTable tableName="m_savings_account" remarks="The SavingsAccount entity.\n@author HamidReza.">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="account_number" type="varchar(20)">
+                <constraints nullable="false" unique="true" uniqueConstraintName="ux_m_savings_account_account_number" />
+            </column>
+            <column name="external_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="status" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="sub_status" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="account_type" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="submitted_on_date" type="datetime">
+                <constraints nullable="true" />
+            </column>
+            <column name="rejected_on_date" type="datetime">
+                <constraints nullable="true" />
+            </column>
+            <column name="approved_on_date" type="datetime">
+                <constraints nullable="true" />
+            </column>
+            <column name="nominal_annual_interest_rate" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="interest_compounding_period_type" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="interest_posting_period_type" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="interest_calculation_type" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="interest_calculation_days_in_year_type" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="min_required_opening_balance" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="lockin_period_frequency" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="lockin_period_frequency_type" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="nominal_annual_interest_rate_overdraft" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="min_overdraft_for_interest_calculation" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="min_balance_for_interest_calculation" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="enforce_min_required_balance" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="min_required_balance" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <column name="withdrawal_fee_applicable_for_transfer" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="allow_overdraft" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="overdraft_limit" type="decimal(21,2)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+        <dropDefaultValue tableName="m_savings_account" columnName="submitted_on_date" columnDataType="datetime"/>
+        <dropDefaultValue tableName="m_savings_account" columnName="rejected_on_date" columnDataType="datetime"/>
+        <dropDefaultValue tableName="m_savings_account" columnName="approved_on_date" columnDataType="datetime"/>
+    </changeSet>
+
+    <changeSet id="20210326103800-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20210326103800-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/m_savings_account.csv"
+                  separator=";"
+                  tableName="m_savings_account">
+            <column name="id" type="numeric"/>
+            <column name="account_number" type="string"/>
+            <column name="external_id" type="string"/>
+            <column name="status" type="numeric"/>
+            <column name="sub_status" type="numeric"/>
+            <column name="account_type" type="numeric"/>
+            <column name="submitted_on_date" type="datetime"/>
+            <column name="rejected_on_date" type="datetime"/>
+            <column name="approved_on_date" type="datetime"/>
+            <column name="nominal_annual_interest_rate" type="numeric"/>
+            <column name="interest_compounding_period_type" type="numeric"/>
+            <column name="interest_posting_period_type" type="numeric"/>
+            <column name="interest_calculation_type" type="numeric"/>
+            <column name="interest_calculation_days_in_year_type" type="numeric"/>
+            <column name="min_required_opening_balance" type="numeric"/>
+            <column name="lockin_period_frequency" type="numeric"/>
+            <column name="lockin_period_frequency_type" type="numeric"/>
+            <column name="nominal_annual_interest_rate_overdraft" type="numeric"/>
+            <column name="min_overdraft_for_interest_calculation" type="numeric"/>
+            <column name="min_balance_for_interest_calculation" type="numeric"/>
+            <column name="enforce_min_required_balance" type="boolean"/>
+            <column name="min_required_balance" type="numeric"/>
+            <column name="withdrawal_fee_applicable_for_transfer" type="boolean"/>
+            <column name="allow_overdraft" type="boolean"/>
+            <column name="overdraft_limit" type="numeric"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

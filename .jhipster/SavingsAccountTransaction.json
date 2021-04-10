@@ -1,0 +1,74 @@
+{
+  "name": "SavingsAccountTransaction",
+  "fields": [
+    {
+      "fieldName": "transactionType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "reversed",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "dateOf",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "overdraftAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "balanceEndDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "balanceNumberOfDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "runningBalance",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "cumulativeBalance",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "isManualTransaction",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "releaseIdOfHoldAmountTransaction",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "savingsAccount",
+      "otherEntityRelationshipName": "savingsAccountTransaction",
+      "relationshipName": "savingsAccount",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210326104000",
+  "javadoc": "The SavingsAccountTransaction entity.\\n@author A true hipster",
+  "entityTableName": "m_savings_account_transaction",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

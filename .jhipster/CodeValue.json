@@ -1,0 +1,23 @@
+{
+  "name": "CodeValue",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String",
+      "javadoc": "fieldName"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210326103300",
+  "javadoc": "The CodeValue entity.\\n@author A true hipster",
+  "entityTableName": "code_value",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

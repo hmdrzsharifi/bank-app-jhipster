@@ -1,0 +1,46 @@
+{
+  "bankApp": {
+    "savingsProduct": {
+      "home": {
+        "title": "Savings Products",
+        "createLabel": "Create a new Savings Product",
+        "createOrEditLabel": "Create or edit a Savings Product",
+        "notFound": "No Savings Products found"
+      },
+      "created": "A new Savings Product is created with identifier {{ param }}",
+      "updated": "A Savings Product is updated with identifier {{ param }}",
+      "deleted": "A Savings Product is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Savings Product {{ id }}?"
+      },
+      "detail": {
+        "title": "Savings Product"
+      },
+      "name": "Name",
+      "shortName": "Short Name",
+      "description": "Description",
+      "nominalAnnualInterestRate": "Nominal Annual Interest Rate",
+      "interestCompoundingPeriodType": "Interest Compounding Period Type",
+      "interestPostingPeriodType": "Interest Posting Period Type",
+      "interestCalculationType": "Interest Calculation Type",
+      "interestCalculationDaysInYearType": "Interest Calculation Days In Year Type",
+      "minRequiredOpeningBalance": "Min Required Opening Balance",
+      "lockinPeriodFrequency": "Lockin Period Frequency",
+      "lockinPeriodFrequencyType": "Lockin Period Frequency Type",
+      "accountingRule": "Accounting Rule",
+      "withdrawalFeeApplicableForTransfer": "Withdrawal Fee Applicable For Transfer",
+      "allowOverdraft": "Allow Overdraft",
+      "overdraftLimit": "Overdraft Limit",
+      "nominalAnnualInterestRateOverdraft": "Nominal Annual Interest Rate Overdraft",
+      "minOverdraftForInterestCalculation": "Min Overdraft For Interest Calculation",
+      "enforceMinRequiredBalance": "Enforce Min Required Balance",
+      "minRequiredBalance": "Min Required Balance",
+      "minBalanceForInterestCalculation": "Min Balance For Interest Calculation",
+      "withHoldTax": "With Hold Tax",
+      "isDormancyTrackingActive": "Is Dormancy Tracking Active",
+      "daysToInactive": "Days To Inactive",
+      "daysToDormancy": "Days To Dormancy",
+      "daysToEscheat": "Days To Escheat"
+    }
+  }
+}

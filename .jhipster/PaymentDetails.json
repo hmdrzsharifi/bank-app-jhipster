@@ -1,0 +1,23 @@
+{
+  "name": "PaymentDetails",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String",
+      "javadoc": "fieldName"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210326104100",
+  "javadoc": "The PaymentDetail entity.\\n@author A true hipster",
+  "entityTableName": "payment_details",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

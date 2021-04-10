@@ -1,0 +1,46 @@
+{
+  "bankApp": {
+    "savingsAccount": {
+      "home": {
+        "title": "Savings Accounts",
+        "createLabel": "Create a new Savings Account",
+        "createOrEditLabel": "Create or edit a Savings Account",
+        "notFound": "No Savings Accounts found"
+      },
+      "created": "A new Savings Account is created with identifier {{ param }}",
+      "updated": "A Savings Account is updated with identifier {{ param }}",
+      "deleted": "A Savings Account is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Savings Account {{ id }}?"
+      },
+      "detail": {
+        "title": "Savings Account"
+      },
+      "accountNumber": "Account Number",
+      "externalId": "External Id",
+      "status": "Status",
+      "subStatus": "Sub Status",
+      "accountType": "Account Type",
+      "submittedOnDate": "Submitted On Date",
+      "rejectedOnDate": "Rejected On Date",
+      "approvedOnDate": "Approved On Date",
+      "nominalAnnualInterestRate": "Nominal Annual Interest Rate",
+      "interestCompoundingPeriodType": "Interest Compounding Period Type",
+      "interestPostingPeriodType": "Interest Posting Period Type",
+      "interestCalculationType": "Interest Calculation Type",
+      "interestCalculationDaysInYearType": "Interest Calculation Days In Year Type",
+      "minRequiredOpeningBalance": "Min Required Opening Balance",
+      "lockinPeriodFrequency": "Lockin Period Frequency",
+      "lockinPeriodFrequencyType": "Lockin Period Frequency Type",
+      "nominalAnnualInterestRateOverdraft": "Nominal Annual Interest Rate Overdraft",
+      "minOverdraftForInterestCalculation": "Min Overdraft For Interest Calculation",
+      "minBalanceForInterestCalculation": "Min Balance For Interest Calculation",
+      "enforceMinRequiredBalance": "Enforce Min Required Balance",
+      "minRequiredBalance": "Min Required Balance",
+      "withdrawalFeeApplicableForTransfer": "Withdrawal Fee Applicable For Transfer",
+      "allowOverdraft": "Allow Overdraft",
+      "overdraftLimit": "Overdraft Limit",
+      "savingsAccountTransaction": "Savings Account Transaction"
+    }
+  }
+}

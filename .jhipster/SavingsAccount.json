@@ -1,0 +1,123 @@
+{
+  "name": "SavingsAccount",
+  "fields": [
+    {
+      "fieldName": "accountNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength", "unique"],
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "externalId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "subStatus",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "accountType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "submittedOnDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "rejectedOnDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "approvedOnDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "nominalAnnualInterestRate",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "interestCompoundingPeriodType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "interestPostingPeriodType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "interestCalculationType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "interestCalculationDaysInYearType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "minRequiredOpeningBalance",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "lockinPeriodFrequency",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "lockinPeriodFrequencyType",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nominalAnnualInterestRateOverdraft",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "minOverdraftForInterestCalculation",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "minBalanceForInterestCalculation",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "enforceMinRequiredBalance",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "minRequiredBalance",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "withdrawalFeeApplicableForTransfer",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "allowOverdraft",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "overdraftLimit",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "savingsAccountTransaction",
+      "otherEntityRelationshipName": "savingsAccount",
+      "relationshipName": "savingsAccountTransaction"
+    }
+  ],
+  "changelogDate": "20210326103800",
+  "javadoc": "The SavingsAccount entity.\\n@author HamidReza.",
+  "entityTableName": "m_savings_account",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

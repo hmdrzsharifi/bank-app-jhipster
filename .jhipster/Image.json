@@ -1,0 +1,31 @@
+{
+  "name": "Image",
+  "fields": [
+    {
+      "fieldName": "fieldName",
+      "fieldType": "String",
+      "javadoc": "fieldName"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "image",
+      "relationshipName": "client",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210326103600",
+  "javadoc": "The Image entity.\\n@author A true hipster",
+  "entityTableName": "image",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

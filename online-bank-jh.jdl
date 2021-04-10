@@ -1,0 +1,294 @@
+/**
+ * The Client entity.
+ * @author HamidReza.
+ */
+entity Client (m_client) {
+  // id Long P.K.
+  // office_id Long F.K.
+  // staff_id Long F.K.
+  accountNumber String required maxlength(20) unique //account_no
+  status Integer //status_enum
+  activationDate Instant //activation_date
+  firstname String maxlength(50)
+  lastname String maxlength(50)
+  middlename String maxlength(50)
+  fullname String maxlength(100)
+  displayName String maxlength(100) //display_name
+  mobileNo String maxlength(50) unique //mobile_no
+  emailAddress String maxlength(50) unique //email_address
+  isStaff  Boolean  required //is_staff
+  externalId String maxlength(100) unique //external_id
+  dateOfBirth Instant //date_of_birth
+  closureDate Instant //closedon_date
+  rejectionDate Instant //rejectedon_date
+  reactivateDate Instant //reactivated_on_date
+  submittedOnDate Instant //submittedon_date
+
+  // other fields
+  //legalForm Integer //legal_form_enum
+  //transfer_to_office_id
+  //office_joining_date Instant //office_joining_date
+  //sub_status String
+  //gender_cv_id String
+  //client_type_cv_id String
+  //client_classification_cv_id String
+  //closure_reason_cv_id String
+  //updated_by String
+  //updated_on String
+  //submittedon_userid String
+  //activatedon_userid String
+  //closedon_userid String
+  //default_savings_product String
+  //default_savings_account String
+  //reject_reason_cv_id String
+  //rejectedon_userid String
+  //withdraw_reason_cv_id String
+  //withdrawn_on_date Instant
+  //withdraw_on_userid String
+  //reactivated_on_userid String
+  //reopened_on_date Instant
+  //reopened_by_userid String
+  //proposed_transfer_date Instant
+}
+
+
+/**
+ * The Office entity.
+ * @author HamidReza.
+ */
+entity Office (m_office) {
+  // id Long
+  name String maxlength(100) required
+  openingDate Instant required
+  externalId String maxlength(100) 
+  //hierarchy String
+}
+
+/**
+ * The CodeValue entity.
+ * @author A true hipster
+ */
+entity CodeValue {
+  /** fieldName */
+  fieldName String
+}
+
+/**
+ * The AppUser entity.
+ * @author A true hipster
+ */
+entity AppUser {
+  /** fieldName */
+  fieldName String
+}
+
+/**
+ * The ClientNonPerson entity.
+ * m_client_non_person
+ * @author A true hipster
+ */
+entity ClientNonPerson {
+  /** fieldName */
+  fieldName String
+}
+/**
+ * The Image entity.
+ * @author A true hipster
+ */
+entity Image {
+  /** fieldName */
+  fieldName String
+}
+
+/**
+ * The SavingsProduct entity.
+ * @author HamidReza.
+ */
+entity SavingsProduct (m_savings_product) {
+  name String unique
+  shortName String unique //short_name
+  description String maxlength(500)
+  nominalAnnualInterestRate BigDecimal //nominal_annual_interest_rate String
+  interestCompoundingPeriodType Integer //interest_compounding_period_enum
+  interestPostingPeriodType Integer //interest_posting_period_enum
+  interestCalculationType Integer //interest_calculation_type_enum
+  interestCalculationDaysInYearType Integer //interest_calculation_days_in_year_type_enum
+  minRequiredOpeningBalance BigDecimal //min_required_opening_balance
+  lockinPeriodFrequency Integer // lockin_period_frequency
+  lockinPeriodFrequencyType Integer //lockin_period_frequency_enum
+  accountingRule Integer //accounting_type
+  withdrawalFeeApplicableForTransfer Boolean //withdrawal_fee_for_transfer
+  allowOverdraft Boolean //allow_overdraft
+  overdraftLimit BigDecimal //overdraft_limit
+  nominalAnnualInterestRateOverdraft BigDecimal //nominal_annual_interest_rate_overdraft
+  minOverdraftForInterestCalculation BigDecimal //min_overdraft_for_interest_calculation
+  enforceMinRequiredBalance Boolean //enforce_min_required_balance
+  minRequiredBalance BigDecimal //min_required_balance
+  minBalanceForInterestCalculation BigDecimal //min_balance_for_interest_calculation
+  withHoldTax Boolean //withhold_tax
+  isDormancyTrackingActive Boolean //is_dormancy_tracking_active
+  daysToInactive Long //days_to_inactive
+  daysToDormancy Long //days_to_dormancy
+  daysToEscheat Long //days_to_escheat
+
+
+
+  //deposit_type_enum String
+  //currency_code String
+  //currency_digits String
+  //currency_multiplesof String  
+  //withdrawal_fee_amount String
+  //withdrawal_fee_type_enum String
+  //tax_group_id String
+}
+
+
+/**
+ * The SavingsAccount entity.
+ * @author HamidReza.
+ */
+entity SavingsAccount (m_savings_account){
+accountNumber String required maxlength(20) unique //account_no
+externalId String //external_id
+// group_id String
+status Integer // status_enum
+subStatus Integer // sub_status_enum
+accountType Integer // account_type_enum
+submittedOnDate Instant  // submittedon_date
+rejectedOnDate Instant // rejectedon_date
+approvedOnDate Instant // approvedon_date
+nominalAnnualInterestRate BigDecimal // nominal_annual_interest_rate
+interestCompoundingPeriodType Integer //interest_compounding_period_enum
+interestPostingPeriodType Integer //interest_posting_period_enum
+interestCalculationType Integer //interest_calculation_type_enum
+interestCalculationDaysInYearType Integer //interest_calculation_days_in_year_type_enum
+minRequiredOpeningBalance BigDecimal //min_required_opening_balance
+lockinPeriodFrequency Integer // lockin_period_frequency
+lockinPeriodFrequencyType Integer //lockin_period_frequency_enum
+nominalAnnualInterestRateOverdraft BigDecimal //nominal_annual_interest_rate_overdraft
+minOverdraftForInterestCalculation BigDecimal //min_overdraft_for_interest_calculation
+minBalanceForInterestCalculation BigDecimal //min_balance_for_interest_calculation
+enforceMinRequiredBalance Boolean //enforce_min_required_balance
+minRequiredBalance BigDecimal //min_required_balance
+withdrawalFeeApplicableForTransfer Boolean //withdrawal_fee_for_transfer
+allowOverdraft Boolean //allow_overdraft
+overdraftLimit BigDecimal //overdraft_limit
+
+
+//deposit_type_enum String
+//submittedon_userid String
+//approvedon_userid String
+//rejectedon_userid String
+//withdrawnon_date String
+//withdrawnon_userid String
+//activatedon_date String
+//activatedon_userid String
+//closedon_date String
+//closedon_userid String
+//currency_code String
+//currency_digits String
+//currency_multiplesof String
+//lockedin_until_date_derived String
+//total_deposits_derived String
+//total_withdrawals_derived String
+//total_withdrawal_fees_derived String
+//total_fees_charge_derived String
+//total_penalty_charge_derived String
+//total_annual_fees_derived String
+//total_interest_earned_derived String
+//total_interest_posted_derived String
+//total_overdraft_interest_derived String
+//total_withhold_tax_derived String
+//account_balance_derived String
+//start_interest_calculation_date String
+//on_hold_funds_derived String
+//version String
+//withhold_tax String
+//tax_group_id String
+//last_interest_calculation_date String
+//total_savings_amount_on_hold String
+}
+
+/**
+ * One to one relationship.
+ */
+//relationship OneToOne {
+//  SavingsProduct to SavingsAccount
+//}
+
+/**
+ * The Staff entity.
+ * @author A true hipster
+ */
+entity Staff {
+  /** fieldName */
+  fieldName String
+}
+
+/**
+ * Many to one relationship.
+ */
+relationship ManyToOne {
+  Client{staff} to Staff
+  Client{office} to Office
+}
+/**
+ * One to many relationship.
+ */
+relationship OneToMany {
+  Office{children} to Office{parent}
+  
+  SavingsAccount to SavingsAccountTransaction
+}
+
+/**
+ * One to one relationship.
+ */
+relationship OneToOne {
+  Client to Image 
+}
+// relationship ManyToOne {
+//   Office{parent} to Office
+// }
+
+/**
+ * The SavingsAccountTransaction entity.
+ * @author A true hipster
+ */
+entity SavingsAccountTransaction (m_savings_account_transaction){
+ transactionType Integer //transaction_type_enum
+ reversed Boolean //is_reversed 
+ dateOf Instant // transaction_date
+ amount BigDecimal
+ overdraftAmount BigDecimal //overdraft_amount_derived
+ balanceEndDate Instant //balance_end_date_derived 
+ balanceNumberOfDays Integer //balance_number_of_days_derived
+ runningBalance BigDecimal //running_balance_derived
+ cumulativeBalance BigDecimal //cumulative_balance_derived
+ createdDate Instant //created_date
+ isManualTransaction Boolean // is_manual
+ releaseIdOfHoldAmountTransaction Long // release_id_of_hold_amount
+}
+
+
+/**
+ * The PaymentDetail entity.
+ * @author A true hipster
+ */
+entity PaymentDetails {
+  /** fieldName */
+  fieldName String
+}
+
+// Set pagination options
+//paginate JobHistory, Employee with infinite-scroll
+//paginate Job with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
