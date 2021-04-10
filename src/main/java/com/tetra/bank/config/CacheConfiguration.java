@@ -50,6 +50,19 @@ public class CacheConfiguration {
             createCache(cm, com.tetra.bank.domain.User.class.getName() + ".authorities");
             createCache(cm, com.tetra.bank.domain.PersistentToken.class.getName());
             createCache(cm, com.tetra.bank.domain.User.class.getName() + ".persistentTokens");
+            createCache(cm, com.tetra.bank.domain.Client.class.getName());
+            createCache(cm, com.tetra.bank.domain.Office.class.getName());
+            createCache(cm, com.tetra.bank.domain.Office.class.getName() + ".children");
+            createCache(cm, com.tetra.bank.domain.CodeValue.class.getName());
+            createCache(cm, com.tetra.bank.domain.AppUser.class.getName());
+            createCache(cm, com.tetra.bank.domain.ClientNonPerson.class.getName());
+            createCache(cm, com.tetra.bank.domain.Image.class.getName());
+            createCache(cm, com.tetra.bank.domain.SavingsProduct.class.getName());
+            createCache(cm, com.tetra.bank.domain.SavingsAccount.class.getName());
+            createCache(cm, com.tetra.bank.domain.SavingsAccount.class.getName() + ".savingsAccountTransactions");
+            createCache(cm, com.tetra.bank.domain.Staff.class.getName());
+            createCache(cm, com.tetra.bank.domain.SavingsAccountTransaction.class.getName());
+            createCache(cm, com.tetra.bank.domain.PaymentDetails.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -7,6 +7,17 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "ماهیت ها",
+        "client": "Client",
+        "office": "Office",
+        "codeValue": "Code Value",
+        "appUser": "App User",
+        "clientNonPerson": "Client Non Person",
+        "image": "Image",
+        "savingsProduct": "Savings Product",
+        "savingsAccount": "Savings Account",
+        "staff": "Staff",
+        "savingsAccountTransaction": "Savings Account Transaction",
+        "paymentDetails": "Payment Details",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
